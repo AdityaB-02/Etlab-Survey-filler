@@ -1,5 +1,6 @@
 let enabled = false;
 chrome.storage.local.set({ enabled });
+console.log("Extension enabled:", enabled);
 
 document.querySelector('#toggle').addEventListener('click', async () => {
   enabled = !enabled;

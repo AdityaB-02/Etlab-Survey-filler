@@ -12,6 +12,7 @@ radios.forEach(radio => {
 });
 */
 chrome.storage.local.get("enabled", ({ enabled }) => {
+  console.log("Extension enabled:", enabled);
   if (enabled) {
     console.log("Autofill is active!");
     let elements = document.querySelectorAll('input[type="radio"]');
