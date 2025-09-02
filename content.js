@@ -33,7 +33,3 @@ chrome.storage.onChanged.addListener((changes) => {
     console.log("Extension state changed:", changes.enabled.newValue);
   }
 });
-
-
-
-
